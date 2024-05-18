@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Rubik;
+  src: url("https://cdn.phaz.uk/fonts/rubik/Rubik-VariableFont_wght.ttf");
+}
+
+body{
+  background: #444;
+  font-family: Rubik, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+.centre{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  width: 300px;
+  height: 290px;
+  background: black;
+  box-shadow: #000 0 0 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.25s;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.start-button{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  border: white 10px double;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.25s;
+}
+
+.start-info{
+  position: fixed;
+  top: calc(50% + 200px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.start-button:hover{
+  background: #0005;
+}
+
+.numtext{
+  font-size: 75px;
+}
+
+@media screen and (max-width: 314px) {
+  .centre{
+    width: 100%;
+    height: 240px;
+  }
+
+  .numtext{
+    font-size: 50px;
+  }
+}
